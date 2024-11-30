@@ -1,12 +1,5 @@
-function cssShadow({
-					   font_size,
-					   offset_x,
-					   offset_y,
-					   blur,
-					   opacity,
-					   color,
-					   rgba
-				   }) {
+function cssShadow({font_size, offset_x, offset_y, blur, opacity, color, rgba})
+{
 	let cssStyles = offset_x + 'px ' + offset_y + 'px ' + blur + 'px ' + rgba;
 	$('h1').css('text-shadow', cssStyles);
 	$('#resultHex').val('background-color: ' + color + ';\nopacity: ' + opacity + '\nfont-size: ' + font_size + 'px;')
